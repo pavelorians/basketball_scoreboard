@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="basketball_board.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bowlby+One&family=Monsieur+La+Doulaise&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="scoreboard" class="justify">
+      <div id="host" class="justify">
+        <h1>HOST</h1>
+        <div id="hostPoints" class="points justify">0</div>
+        <div class="scores justify">
+          <div id="hostOnePoint" onclick="hostOnePoint()">+ 1</div>
+          <div id="hostTwoPoints" onclick="hostTwoPoints()">+ 2</div>
+          <div id="hostThreePoints" onclick="hostThreePoints()">+ 3</div>
+        </div>
+      </div>
+      <div id="newGame" class="justify" onclick="reset()">
+        <button>New Game</button>
+        <div id="timer" class="justify" onclick="timer()">
+          <div id="minute" class="justify">20</div>
+          <div id="colon" class="justify">:</div>
+          <div id="second" class="justify">00</div>
+        </div>
+      </div>
+
+      <div id="guest" class="justify">
+        <h1>GUEST</h1>
+        <div id="guestPoints" class="points justify">0</div>
+        <div class="scores justify">
+          <div id="guestOnePoint" onclick="guestOnePoint()">+ 1</div>
+          <div id="guestTwoPoints" onclick="guestTwoPoints()">+ 2</div>
+          <div id="guestThreePoints" onclick="guestThreePoints()">+ 3</div>
+        </div>
+      </div>
+    </div>
+    <script src="basketball_board.js"></script>
+  </body>
+</html>
